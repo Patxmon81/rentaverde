@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# No indexar páginas legales
+Disallow: /pages/aviso-legal.html
+Disallow: /pages/privacidad.html
+Disallow: /pages/cookies.html
+
+Sitemap: https://rentaverde.com/sitemap.xml

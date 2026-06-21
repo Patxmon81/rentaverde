@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | rentaverde.com</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta name="description" content="Contacta con el equipo de rentaverde.com: consultas sobre cursos analizados, colaboraciones, errores en el contenido o cualquier otra cuestión.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rentaverde.com/pages/contacto.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Aviso de cookies">
+    <div class="cookie-banner__inner">
+      <p>Usamos cookies propias y de terceros para mejorar tu experiencia. <a href="cookies.html">Más información</a></p>
+      <div class="cookie-banner__actions">
+        <button id="cookie-accept-all" class="btn btn--primary btn--sm">Aceptar todas</button>
+        <button id="cookie-accept-necessary" class="btn btn--outline btn--sm">Solo necesarias</button>
+      </div>
+    </div>
+  </div>
+
+  <header id="site-header" class="site-header">
+    <div class="container site-header__inner">
+      <a href="../index.html" class="logo" aria-label="rentaverde.com — Inicio">
+        <span class="logo__renta">renta</span><span class="logo__verde">verde</span><span class="logo__tld">.com</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegación principal">
+        <ul class="primary-nav__list">
+          <li><a href="../index.html" class="primary-nav__link">Inicio</a></li>
+          <li><a href="cursos.html" class="primary-nav__link">Cursos <span class="badge badge--new">Nuevo</span></a></li>
+          <li><a href="guias.html" class="primary-nav__link">Guías</a></li>
+          <li><a href="herramientas.html" class="primary-nav__link">Herramientas</a></li>
+          <li><a href="sobre-mi.html" class="primary-nav__link">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="post-header">
+      <div class="container container--narrow">
+        <nav class="breadcrumb" aria-label="Ruta de navegación">
+          <ol class="breadcrumb__list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li aria-hidden="true">›</li>
+            <li aria-current="page">Contacto</li>
+          </ol>
+        </nav>
+        <h1 class="post-header__title">Contacto</h1>
+        <p class="post-header__intro">¿Tienes una duda sobre algún curso? ¿Detectaste un error en el contenido? ¿Quieres proponer una colaboración? Escríbenos. Respondemos en un plazo de 48 horas laborables.</p>
+      </div>
+    </div>
+
+    <section class="section post-body">
+      <div class="container container--narrow">
+
+        <!-- AVISO: financiero -->
+        <div class="legal-notice-box">
+          <p><strong>Aviso importante:</strong> no ofrecemos asesoramiento financiero personalizado por email. Si nos escribes con una consulta sobre finanzas o inversión, podemos orientarte hacia recursos educativos de la web, pero no podemos darte consejo individualizado sobre tu situación económica.</p>
+        </div>
+
+        <!-- MOTIVOS DE CONTACTO -->
+        <div class="contact-reasons">
+          <div class="contact-reason">
+            <span class="contact-reason__icon" aria-hidden="true">📚</span>
+            <div>
+              <strong>Consulta sobre un curso</strong>
+              <p>¿Tienes dudas sobre si un curso es para ti? Cuéntanos tu situación y te orientamos.</p>
+            </div>
+          </div>
+          <div class="contact-reason">
+            <span class="contact-reason__icon" aria-hidden="true">✏️</span>
+            <div>
+              <strong>Error o contenido desactualizado</strong>
+              <p>Si detectas algún dato incorrecto o un enlace roto, te lo agradecemos enormemente.</p>
+            </div>
+          </div>
+          <div class="contact-reason">
+            <span class="contact-reason__icon" aria-hidden="true">🤝</span>
+            <div>
+              <strong>Colaboración</strong>
+              <p>¿Eres creador de un curso de finanzas y quieres que lo analicemos? Escríbenos.</p>
+            </div>
+          </div>
+          <div class="contact-reason">
+            <span class="contact-reason__icon" aria-hidden="true">⚖️</span>
+            <div>
+              <strong>Solicitudes legales o RGPD</strong>
+              <p>Para ejercer tus derechos de acceso, rectificación, supresión u oposición de datos personales.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="contact-form-wrap">
+          <h2 class="post-body__h2">Envíanos tu mensaje</h2>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Tu nombre <span aria-hidden="true" style="color:var(--color-primary)">*</span></label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Ana García" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Tu correo electrónico <span aria-hidden="true" style="color:var(--color-primary)">*</span></label>
+              <input type="email" id="contact-email" class="form-input" placeholder="ana@ejemplo.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Asunto <span aria-hidden="true" style="color:var(--color-primary)">*</span></label>
+              <select id="contact-subject" class="form-input" required>
+                <option value="" disabled selected>Selecciona el motivo de contacto</option>
+                <option value="curso">Consulta sobre un curso</option>
+                <option value="error">Error o contenido desactualizado</option>
+                <option value="colaboracion">Propuesta de colaboración</option>
+                <option value="rgpd">Solicitud RGPD / privacidad</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Mensaje <span aria-hidden="true" style="color:var(--color-primary)">*</span></label>
+              <textarea id="contact-message" class="form-input form-textarea" placeholder="Cuéntanos en qué podemos ayudarte..." rows="6" required></textarea>
+            </div>
+            <div class="form-group contact-form__consent">
+              <label class="contact-form__checkbox-label">
+                <input type="checkbox" id="contact-consent" required>
+                <span>He leído y acepto la <a href="privacidad.html" target="_blank">Política de Privacidad</a> de rentaverde.com</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Enviar mensaje →</button>
+            <p class="contact-form__note">Respondemos en un plazo de 48 horas laborables. No compartimos tu email con terceros.</p>
+          </form>
+
+          <div class="contact-success" id="contact-success" hidden aria-live="polite">
+            <span class="contact-success__icon" aria-hidden="true">✅</span>
+            <h3>¡Mensaje recibido!</h3>
+            <p>Gracias por escribirnos. Te responderemos en el correo indicado en un plazo de 48 horas laborables.</p>
+            <a href="../index.html" class="btn btn--primary" style="margin-top:16px">Volver al inicio</a>
+          </div>
+        </div>
+
+        <!-- CONTACTO ALTERNATIVO -->
+        <div class="contact-alternative">
+          <h2 class="post-body__h2">También puedes escribirnos directamente</h2>
+          <p>Si prefieres el email directo: <a href="mailto:hola@rentaverde.com" class="contact-email-link">hola@rentaverde.com</a></p>
+          <p style="color: var(--color-text-soft); font-size: 0.9rem; margin-top: 8px;">Horario de atención: lunes a viernes de 9:00 a 18:00 (CET). Respondemos en el orden en que recibimos los mensajes.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__legal-notice">
+        <p>El contenido de rentaverde.com es exclusivamente educativo e informativo. No constituye asesoramiento financiero, de inversión ni fiscal.</p>
+      </div>
+      <div class="site-footer__bottom">
+        <p>© <span id="year"></span> rentaverde.com — <a href="aviso-legal.html" style="color:var(--color-accent)">Aviso legal</a> · <a href="privacidad.html" style="color:var(--color-accent)">Privacidad</a> · <a href="cookies.html" style="color:var(--color-accent)">Cookies</a> · <a href="contacto.html" style="color:var(--color-accent)">Contacto</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
