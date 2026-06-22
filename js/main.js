@@ -3,6 +3,25 @@
    Vanilla JS — no dependencies
    ================================================================ */
 
+// ── GA4 — solo carga si el usuario ha aceptado cookies analíticas ──
+const GA_ID = 'G-7JR0L0MMED';
+
+function initGA() {
+  if (window.__gaInitialized) return;
+  window.__gaInitialized = true;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ window.dataLayer.push(arguments); };
+  window.gtag('js', new Date());
+  window.gtag('config', GA_ID);
+}
+
+if (localStorage.getItem('rv_cookies_accepted') === 'all') initGA();
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── 1. STICKY HEADER ────────────────────────────────────────────
@@ -221,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnAcceptAll.addEventListener('click', () => {
       localStorage.setItem(COOKIE_KEY, 'all');
       hideBanner();
+      initGA();
     });
   }
 
